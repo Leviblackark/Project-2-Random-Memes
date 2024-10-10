@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-* {
+body {
     background-color: black;
 }
 
@@ -45,6 +45,33 @@ p {
 
 footer {
     color: #3F4E4F
+}
+
+/* Responsive Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .centre-adjustment {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .centre-adjustment {
+        width: 100%; /* Full screen width on very small screens */
+        margin: 0 auto 15px auto; /* Maintain centering with smaller bottom margin */
+    }
+
+    p {
+        font-size: 0.9rem; /* Further reduce paragraph text for smaller screens */
+    }
 }
 
 
